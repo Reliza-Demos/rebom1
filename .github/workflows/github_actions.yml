@@ -16,12 +16,12 @@ jobs:
           registry_username: ${{ secrets.DOCKER_LOGIN }}
           registry_password: ${{ secrets.DOCKER_TOKEN }}
           registry_host: registry.relizahub.com
-          image_namespace: registry.relizahub.com/library
+          image_namespace: registry.relizahub.com/ff9e82ed-9863-45ec-9332-ad2b42dd6e87-private
           image_name: rebom-backend
           reliza_api_id: ${{ secrets.RELIZA_API_ID }}
           reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
           path: backend
-          reliza_project_id: 116bbe7f-35ea-4554-bbde-3845059961d5
+          reliza_project_id: 825b5ec6-f578-4e37-8374-2a5aaf77fd4a
   build-frontend:
     name: Build And Push Frontend
     runs-on: ubuntu-latest
@@ -32,12 +32,12 @@ jobs:
           registry_username: ${{ secrets.DOCKER_LOGIN }}
           registry_password: ${{ secrets.DOCKER_TOKEN }}
           registry_host: registry.relizahub.com
-          image_namespace: registry.relizahub.com/library
+          image_namespace: registry.relizahub.com/ff9e82ed-9863-45ec-9332-ad2b42dd6e87-private
           image_name: rebom-frontend
           reliza_api_id: ${{ secrets.RELIZA_API_ID }}
           reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
           path: frontend
-          reliza_project_id: a77887b8-2095-46ce-851f-47c72eca863b
+          reliza_project_id: 7a7360d4-df44-4e68-b046-eb0bd17a9a1e
   build-helm:
     name: Build And Push Helm Chart
     runs-on: ubuntu-latest
@@ -47,9 +47,9 @@ jobs:
         with:
           registry_username: ${{ secrets.DOCKER_LOGIN }}
           registry_password: ${{ secrets.DOCKER_TOKEN }}
-          registry_host: registry.relizahub.com/library
+          registry_host: registry.relizahub.com/ff9e82ed-9863-45ec-9332-ad2b42dd6e87-private
           helm_chart_name: rebom
           reliza_api_id: ${{ secrets.RELIZA_API_ID }}
           reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
           path: helm
-          reliza_project_id: 4aa0e445-9f12-4c80-880a-f919c1761f6c
+          reliza_project_id: 98dde7f9-87fc-4277-910b-5531f5db813f
