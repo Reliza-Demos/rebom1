@@ -1,9 +1,9 @@
 backend:
-  image: registry.relizahub.com/library/rebom-backend
+  image: registry.relizahub.com/ff9e82ed-9863-45ec-9332-ad2b42dd6e87-private/rebom-backend
   replicaCount: 1
   regcred: none
 frontend:
-  image: registry.relizahub.com/library/rebom-frontend
+  image: registry.relizahub.com/ff9e82ed-9863-45ec-9332-ad2b42dd6e87-private/rebom-frontend
   replicaCount: 1
   regcred: none
 postgresql:
